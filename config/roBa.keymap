@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                   &kp T                                                             &kp Y            &kp U  &lt 5 I    &kp O      &kp P
-&kp A             &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))                &kp MINUS               &kp H            &kp J  &kp K      &kp L      &kp COMMA
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                    &kp SEMICOLON           &kp N            &kp M  &mkp LCLK  &mkp RCLK  &kp PERIOD
-&gresc            &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 ENTER  &lt 2 SPACE  &lt_to_layer_0 3 DELETE      &lt_to_layer_0 3 ENTER  &lt 1 BACKSPACE                               &kp PERIOD
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                                   &kp Y                &kp U  &lt 5 I    &kp O      &kp P
+&lt 2 A           &kp S         &kp D         &mt LEFT_WIN F          &kp G               &kp LS(LG(S))                &kp MINUS              &kp H                &kp J  &kp K      &kp L      &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B               &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS  &kp N                &kp M  &mkp LCLK  &mkp RCLK  &kp COMMA
+&kp ESC           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 ENTER  &mt LEFT_WIN SPACE  &lt_to_layer_0 3 DELETE      &mt LEFT_ALT ENTER     &mt RCTRL BACKSPACE                               &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp F1  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp LC(X)  &kp LC(A)  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)                             &kp F7  &kp F8  &kp F9  &kp LEFT_BRACKET  &kp AT_SIGN
+&kp LC(C)  &trans     &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(N6)        &trans      &kp F13  &kp F4  &kp F5  &kp F6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LC(V)  &trans     &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans      &trans   &kp F1  &kp F2  &kp F3  &kp COLON         &kp LS(QUESTION)
+&trans     &trans     &trans            &trans            &trans            &trans      &sl 0    &sl 0                                     &kp F12
             >;
         };
 
