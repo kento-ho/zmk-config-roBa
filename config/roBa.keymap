@@ -17,12 +17,12 @@
         compatible = "zmk,combos";
 
         tab {
-            bindings = <&kp TAB>;
+            bindings = <&kp LS(TAB)>;
             key-positions = <11 12>;
         };
 
         shift_tab {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp TAB>;
             key-positions = <12 13>;
         };
 
@@ -37,7 +37,7 @@
         };
 
         eq {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp KP_EQUAL>;
             key-positions = <24 25>;
         };
     };
@@ -46,7 +46,15 @@
         kakko: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT_MUHENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            bindings =
+                <&kp INT_MUHENKAN>,
+                <&macro_wait_time 200>,
+                <&kp LEFT_PARENTHESIS>,
+                <&macro_wait_time 200>,
+                <&kp RIGHT_PARENTHESIS>,
+                <&macro_wait_time 200>,
+                <&kp LEFT>;
+
             label = "TO_LAYER_0";
         };
 
@@ -68,8 +76,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT &kp RCTRL &kp V>,
-                <&macro_wait_time 100>,
+                <&kp LC(LEFT_ALT) &kp V>,
+                <&macro_wait_time 500>,
                 <&kp V>,
                 <&macro_wait_time 100>,
                 <&kp ENTER>,
@@ -112,8 +120,8 @@
             bindings = <
 &kp Q             &kp W             &kp E           &kp R           &kp T                                                      &kp Y                &kp U  &kp I      &kp O      &kp P
 &lt 2 A           &kp S             &kp D           &mt LEFT_WIN F  &kp G               &kp LS(LG(S))      &lt 5 MINUS         &kp H                &kp J  &kp K      &kp L      &mt LC(LSHFT) SEMICOLON
-&mt LEFT_SHIFT Z  &kp X             &kp C           &kp V           &kp B               &kagikakko         &kakko              &kp N                &kp M  &mkp LCLK  &mkp RCLK  &lt 3 COMMA
-&kp ESC           &kp INT_MUHENKAN  &kp INT_HENKAN  &lt 1 ENTER     &mt LEFT_WIN SPACE  &lt 3 DELETE       &mt LEFT_ALT ENTER  &mt RCTRL BACKSPACE                               &kp PERIOD
+&mt LEFT_SHIFT Z  &kp X             &kp C           &kp V           &kp B               &kagikakko         &kakko              &kp N                &kp M  &mkp LCLK  &mkp RCLK  &lt 5 COMMA
+&kp ESC           &kp INT_MUHENKAN  &kp INT_HENKAN  &lt 1 ENTER     &mt LEFT_WIN SPACE  &lt 5 DELETE       &mt LEFT_ALT ENTER  &mt RCTRL BACKSPACE                               &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -159,10 +167,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp LG(L)         &kp LS(LC(N7))        &kp LS(LC(N8))        &kp LS(LC(N9))        &kp LG(NUMBER_4)                             &kp N7       &kp N8  &kp N9  &trans  &kp DOUBLE_QUOTES
+&kp LS(CAPSLOCK)  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))        &kp LS(LC(NUMBER_6))  &kp LG(N5)        &trans      &kp LA(RIGHT)  &kp N4       &kp N5  &kp N6  &trans  &kp COLON
+&pass             &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LS(LC(NUMBER_3))  &kp LG(NUMBER_6)  &trans      &kp LA(LEFT)   &kp N1       &kp N2  &kp N3  &trans  &kp TILDE
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &trans                &trans            &trans      &kp LC(W)      &kp LA(TAB)                          &trans
             >;
         };
 
