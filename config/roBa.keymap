@@ -63,6 +63,35 @@
             bindings = <&kp INT_MUHENKAN &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp ENTER &kp LEFT>;
             label = "KAGIKAKKO";
         };
+
+        mojipeast: mojipeast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT &kp RCTRL &kp V>,
+                <&macro_wait_time 100>,
+                <&kp V>,
+                <&macro_wait_time 100>,
+                <&kp ENTER>,
+                <&macro_wait_time 100>,
+                <&kp ESC>;
+
+            label = "MOJIPEAST";
+        };
+
+        mailtenpu: mailtenpu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp A &kp F>;
+            label = "MAILTENPU";
+        };
+
+        wintab: wintab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp TAB>;
+            label = "WINTAB";
+        };
     };
 
     behaviors {
@@ -92,10 +121,10 @@
 
         FUNCTION {
             bindings = <
-&kp LC(X)  &kp LC(A)  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)                                         &kp F7  &kp F8  &kp F9  &kp LS(EXCLAMATION)  &kp AT_SIGN
-&kp LC(C)  &trans     &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(N6)        &trans         &kp LESS_THAN     &kp F4  &kp F5  &kp F6  &kp LEFT_BRACKET     &kp RIGHT_BRACKET
-&kp LC(V)  &trans     &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp TILDE      &kp GREATER_THAN  &kp F1  &kp F2  &kp F3  &kp COLON            &kp LS(QUESTION)
-&trans     &trans     &trans            &trans            &trans            &trans         &trans            &trans                                       &kp SQT
+&kp LC(X)  &kp LC(A)   &kp LA(N7)        &kp LA(N8)        &kp LA(N9)                                         &kp F7  &kp F8  &kp F9  &kp LS(EXCLAMATION)  &kp AT_SIGN
+&kp LC(C)  &mojipeast  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(N6)        &trans         &kp LESS_THAN     &kp F4  &kp F5  &kp F6  &kp LEFT_BRACKET     &kp RIGHT_BRACKET
+&kp LC(V)  &mailtenpu  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp TILDE      &kp GREATER_THAN  &kp F1  &kp F2  &kp F3  &kp COLON            &kp LS(QUESTION)
+&trans     &trans      &wintab           &trans            &trans            &trans         &trans            &trans                                       &kp SQT
             >;
         };
 
@@ -110,10 +139,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp LG(L)         &kp LG(NUMBER_1)  &kp LS(LC(N7))        &kp LC(LS(NUMBER_8))  &kp LS(LC(N9))                               &kp LA(RIGHT)  &trans  &trans  &kp AT_SIGN  &kp DOUBLE_QUOTES
+&kp RS(CAPSLOCK)  &kp LG(NUMBER_2)  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))        &kp LS(LC(N6))        &trans      &trans     &kp LA(LEFT)   &trans  &trans  &kp SQT      &kp COLON
+&pass             &kp LG(NUMBER_3)  &kp LS(LC(NUMBER_1))  &kp LS(LC(N2))        &kp LS(LC(NUMBER_3))  &trans      &trans     &trans         &trans  &trans  &trans       &kp TILDE
+&kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)      &trans                &trans                &trans      &kp LC(W)  &kp LC(TAB)                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
