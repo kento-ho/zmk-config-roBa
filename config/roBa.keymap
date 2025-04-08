@@ -103,7 +103,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W             &kp E           &kp R           &kp T                                                      &kp Y                &kp U  &kp I      &kp O      &kp P
-&lt 2 A           &kp S             &kp D           &mt LEFT_WIN F  &kp G               &kp LS(LG(S))      &lt 5 MINUS         &kp H                &kp J  &kp K      &kp L      &mt LC(LSHFT) SEMICOLON
+&lt 2 A           &kp S             &kp D           &mt LEFT_WIN F  &kp G               &kp LS(LG(S))      &lt 6 MINUS         &kp H                &kp J  &kp K      &kp L      &mt LC(LSHFT) SEMICOLON
 &mt LEFT_SHIFT Z  &kp X             &kp C           &kp V           &kp B               &kagikakko         &kakko              &kp N                &kp M  &mkp LCLK  &mkp RCLK  &lt 5 COMMA
 &kp ESC           &kp INT_MUHENKAN  &kp INT_HENKAN  &lt 1 ENTER     &mt LEFT_WIN SPACE  &lt 5 DELETE       &mt LEFT_ALT ENTER  &mt RCTRL BACKSPACE                               &kp PERIOD
             >;
