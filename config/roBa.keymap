@@ -46,44 +46,28 @@
         kakko: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp INT_MUHENKAN>,
-                <&macro_wait_time 200>,
-                <&kp LEFT_PARENTHESIS>,
-                <&macro_wait_time 200>,
-                <&kp RIGHT_PARENTHESIS>,
-                <&macro_wait_time 200>,
-                <&kp LEFT>;
-
+            bindings = <&kp INT_MUHENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp INTERNATIONAL_4 &kp LEFT>;
             label = "TO_LAYER_0";
         };
 
         pass: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K &kp E &kp N &kp T &kp O &kp N0 &kp NUMBER_1 &kp NUMBER_3 &kp N0 &kp ENTER>;
+            bindings = <&kp INTERNATIONAL_5 &kp K &kp E &kp N &kp T &kp O &kp N0 &kp NUMBER_1 &kp NUMBER_3 &kp N0 &kp ENTER>;
             label = "NEW_MACRO";
         };
 
         kagikakko: kagikakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT_HENKAN &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            bindings = <&kp INT_HENKAN &kp LEFT_BRACKET &kp ENTER &kp RIGHT_BRACKET &kp ENTER &kp LEFT>;
             label = "KAGIKAKKO";
         };
 
         mojipeast: mojipeast {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(LEFT_ALT) &kp V>,
-                <&macro_wait_time 500>,
-                <&kp V>,
-                <&macro_wait_time 100>,
-                <&kp ENTER>,
-                <&macro_wait_time 100>,
-                <&kp ESC>;
-
+            bindings = <&kp LC(LA(V)) &kp V &kp ENTER &kp ESC>;
             label = "MOJIPEAST";
         };
 
@@ -97,7 +81,7 @@
         wintab: wintab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp TAB>;
+            bindings = <&kp LA(LEFT_ALT) &kp TAB>;
             label = "WINTAB";
         };
     };
@@ -124,7 +108,7 @@
 &kp ESC           &kp INT_MUHENKAN  &kp INT_HENKAN  &lt 1 ENTER     &mt LEFT_WIN SPACE  &lt 5 DELETE       &mt LEFT_ALT ENTER  &mt RCTRL BACKSPACE                               &kp PERIOD
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         FUNCTION {
@@ -167,11 +151,13 @@
 
         SCROLL {
             bindings = <
-&kp LG(L)         &kp LS(LC(N7))        &kp LS(LC(N8))        &kp LS(LC(N9))        &kp LG(NUMBER_4)                             &kp N7       &kp N8  &kp N9  &trans  &kp DOUBLE_QUOTES
-&kp LS(CAPSLOCK)  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))        &kp LS(LC(NUMBER_6))  &kp LG(N5)        &trans      &kp LA(RIGHT)  &kp N4       &kp N5  &kp N6  &trans  &kp COLON
-&pass             &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LS(LC(NUMBER_3))  &kp LG(NUMBER_6)  &trans      &kp LA(LEFT)   &kp N1       &kp N2  &kp N3  &trans  &kp TILDE
-&kp LG(NUMBER_1)  &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &trans                &trans            &trans      &kp LC(W)      &kp LA(TAB)                          &trans
+&kp LG(L)         &kp LS(LC(N7))        &kp LS(LC(N8))        &kp LS(LC(N9))        &kp LG(NUMBER_4)                             &kp N7       &kp N8        &kp N9  &trans  &kp DOUBLE_QUOTES
+&kp LS(CAPSLOCK)  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))        &kp LS(LC(NUMBER_6))  &kp LG(N5)        &trans      &kp LA(RIGHT)  &kp N4       &kp N5        &kp N6  &trans  &kp COLON
+&pass             &kp LS(LC(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LS(LC(NUMBER_3))  &kp LG(NUMBER_6)  &trans      &kp LA(LEFT)   &kp N1       &mt RCTRL N2  &kp N3  &trans  &kp TILDE
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &trans                &trans            &trans      &kp LC(W)      &kp LC(TAB)                                &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         layer_6 {
