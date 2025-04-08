@@ -81,7 +81,7 @@
         wintab: wintab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ALT) &kp TAB>;
+            bindings = <&kp LA(TAB)>;
             label = "WINTAB";
         };
     };
@@ -108,7 +108,7 @@
 &kp ESC           &kp INT_MUHENKAN  &kp INT_HENKAN  &lt 1 ENTER     &mt LEFT_WIN SPACE  &lt 5 DELETE       &mt LEFT_ALT ENTER  &mt RCTRL BACKSPACE                               &kp PERIOD
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
