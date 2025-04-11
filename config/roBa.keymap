@@ -119,7 +119,7 @@
         FUNCTION {
             bindings = <
 &kp LC(X)  &kp LC(A)   &kp LA(N7)        &kp LA(N8)        &kp LA(N9)                                         &kp F7  &kp F8  &kp F9  &kp LS(EXCLAMATION)  &kp AT_SIGN
-&kp LC(C)  &mojipeast  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(N6)        &trans         &kp LESS_THAN     &kp F4  &kp F5  &kp F6  &kp LEFT_BRACKET     &kp RIGHT_BRACKET
+&kp LC(C)  &mojipeast  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(N6)        &trans         &kp LESS_THAN     &kp F4  &kp F5  &kp F6  &kp HASH             &kp LS(RIGHT_BRACKET)
 &kp LC(V)  &mailtenpu  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp TILDE      &kp GREATER_THAN  &kp F1  &kp F2  &kp F3  &kp COLON            &kp LS(QUESTION)
 &trans     &trans      &wintab           &trans            &trans            &trans         &trans            &trans                                       &kp SQT
             >;
@@ -127,10 +127,10 @@
 
         NUM {
             bindings = <
-&mt LCTRL SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                           &kp PAGE_UP       &kp HOME         &kp UP          &kp END            &trans
-&trans           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN     &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &trans
-&trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &kp SLASH               &kp SLASH       &kp LEFT_BRACKET  &kp LC(PAGE_UP)  &kp LEFT_BRACE  &kp LC(PAGE_DOWN)  &trans
-&trans           &kp EQUAL     &kp ASTERISK  &trans        &trans     &kp RA(LS(F4))          &trans          &trans                                                                &trans
+&mt LCTRL SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                           &kp PAGE_UP           &kp HOME         &kp UP          &kp END            &trans
+&trans           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &trans
+&trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &kp SLASH               &kp RS(SLASH)   &kp LS(LEFT_BRACKET)  &kp LC(PAGE_UP)  &mkp LCLK       &kp LC(PAGE_DOWN)  &trans
+&trans           &kp EQUAL     &kp ASTERISK  &trans        &trans     &kp RA(LS(F4))          &trans          &trans                                                                    &trans
             >;
         };
 
