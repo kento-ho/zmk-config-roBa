@@ -38,7 +38,12 @@
 
         MAINUS {
             bindings = <&kp MINUS>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
+        };
+
+        SLASHA {
+            bindings = <&kp SLASH>;
+            key-positions = <1 2>;
         };
     };
 
