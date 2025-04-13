@@ -31,8 +31,8 @@
             key-positions = <0 1>;
         };
 
-        eq {
-            bindings = <&kp LS(KP_EQUAL)>;
+        comma {
+            bindings = <&kp COMMA>;
             key-positions = <24 23>;
         };
 
@@ -44,6 +44,16 @@
         SLASHA {
             bindings = <&kp SLASH>;
             key-positions = <1 2>;
+        };
+
+        tab+gui {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <12 13>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <24 25>;
         };
     };
 
