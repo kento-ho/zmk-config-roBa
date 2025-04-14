@@ -23,7 +23,7 @@
 
         shift_tab {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <3 2>;
         };
 
         muhennkann {
