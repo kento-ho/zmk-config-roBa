@@ -123,8 +123,6 @@ keymap {
 &mt LEFT_SHIFT Z  &kp X             &kp C           &kp V           &kp B               &kagikakko         &kakko              &kp N                &kp M  &mkp LCLK  &mkp RCLK  &lt 5 COMMA
 &kp ESC           &kp INT_MUHENKAN  &kp INT_HENKAN  &lt 1 ENTER     &mt LEFT_WIN SPACE  &lt 5 DELETE       &mt LEFT_ALT ENTER  &mt RCTRL BACKSPACE                               &kp PERIOD
 >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
