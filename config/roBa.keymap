@@ -127,15 +127,15 @@
 &kp ESC           &kp INT_MUHENKAN  &kp INT_HENKAN  &lt 1 ENTER     &mt LEFT_WIN SPACE  &lt 5 DELETE       &mt LEFT_ALT ENTER  &mt RCTRL BACKSPACE                               &kp PERIOD
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
             bindings = <
-&kp LC(X)  &kp LC(A)   &kp LA(N7)        &kp LA(N8)        &kp LA(N9)                                         &kp F7  &kp F8  &kp F9  &kp LS(EXCLAMATION)  &kp AT_SIGN
-&kp LC(C)  &mojipeast  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(N6)        &trans         &kp LESS_THAN     &kp F4  &kp F5  &kp F6  &kp HASH             &kp LS(RIGHT_BRACKET)
-&kp LC(V)  &mailtenpu  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp TILDE      &kp GREATER_THAN  &kp F1  &kp F2  &kp F3  &kp COLON            &kp LS(QUESTION)
-&trans     &trans      &wintab           &trans            &trans            &trans         &trans            &trans                                       &kp SQT
+&kp LC(X)  &kp LC(A)   &kp LA(N7)        &kp LA(N8)        &kp LA(N9)                                         &kp F7  &kp F8  &kp F9  &kp LS(EXCLAMATION)   &kp AT_SIGN
+&kp LC(C)  &mojipeast  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(N6)        &trans         &kp LESS_THAN     &kp F4  &kp F5  &kp F6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LC(V)  &mailtenpu  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp TILDE      &kp GREATER_THAN  &kp F1  &kp F2  &kp F3  &kp COLON             &kp LS(QUESTION)
+&kp HASH   &trans      &wintab           &trans            &trans            &trans         &trans            &trans                                        &kp SQT
             >;
         };
 
