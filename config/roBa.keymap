@@ -33,7 +33,7 @@
         };
 
         comma {
-            bindings = <&kp COMMA>;
+            bindings = <&kp KP_COMMA>;
             key-positions = <24 23>;
         };
 
@@ -43,7 +43,7 @@
         };
 
         SLASHA {
-            bindings = <&kp FSLH>;
+            bindings = <&kp KP_SLASH>;
             key-positions = <1 2>;
         };
 
@@ -141,10 +141,10 @@
 
         NUM {
             bindings = <
-&mt LCTRL SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9           &kp PLUS                                           &kp PAGE_UP           &kp HOME         &kp UP          &kp END            &trans
-&trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &mt LEFT_WIN KP_NUMBER_6  &kp MINUS  &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &trans
-&trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3           &kp N0     &kp SLASH               &kp RS(SLASH)   &kp LS(LEFT_BRACKET)  &kp LC(PAGE_UP)  &mkp LCLK       &kp LC(PAGE_DOWN)  &trans
-&trans           &kp EQUAL        &kp ASTERISK     &trans                    &trans     &kp RA(LS(F4))          &trans          &trans                                                                    &trans
+&mt LCTRL SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9           &kp KP_PLUS                                           &kp PAGE_UP           &kp HOME         &kp UP          &kp END            &trans
+&trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &mt LEFT_WIN KP_NUMBER_6  &kp KP_MINUS  &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &trans
+&trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3           &kp N0        &kp KP_SLASH            &kp RS(SLASH)   &kp LS(LEFT_BRACKET)  &kp LC(PAGE_UP)  &mkp LCLK       &kp LC(PAGE_DOWN)  &trans
+&trans           &kp KP_EQUAL     &kp KP_ASTERISK  &trans                    &trans        &kp RA(LS(F4))          &trans          &trans                                                                    &trans
             >;
         };
 
