@@ -141,10 +141,10 @@
 
         NUM {
             bindings = <
-&mt LCTRL SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9           &kp PLUS                                           &kp PAGE_UP           &kp HOME         &kp UP          &kp END            &trans
-&trans           &kp NUMBER_4  &kp NUMBER_5  &mt LEFT_WIN NUMBER_6  &kp MINUS  &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &trans
-&trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &kp N0     &kp SLASH               &kp RS(SLASH)   &kp LS(LEFT_BRACKET)  &kp LC(PAGE_UP)  &mkp LCLK       &kp LC(PAGE_DOWN)  &trans
-&trans           &kp EQUAL     &kp ASTERISK  &trans                 &trans     &kp RA(LS(F4))          &trans          &trans                                                                    &trans
+&mt LCTRL SLASH  &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9       &kp PLUS                                           &kp PAGE_UP           &kp HOME         &kp UP          &kp END            &trans
+&trans           &kp KP_NUMBER_4      &kp KP_NUMBER_5      &mt LEFT_WIN KP_NUMBER_6  &kp MINUS  &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &trans
+&trans           &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3           &kp N0     &kp SLASH               &kp RS(SLASH)   &kp LS(LEFT_BRACKET)  &kp LC(PAGE_UP)  &mkp LCLK       &kp LC(PAGE_DOWN)  &trans
+&trans           &kp EQUAL            &kp ASTERISK         &trans                    &trans     &kp RA(LS(F4))          &trans          &trans                                                                    &trans
             >;
         };
 
