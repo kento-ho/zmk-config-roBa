@@ -141,10 +141,10 @@
 
         NUM {
             bindings = <
-&mt LCTRL SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9           &kp KP_PLUS                                              &kp PAGE_UP           &kp HOME         &kp UP          &kp END            &kp LEFT_BRACKET
-&trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &mt LEFT_WIN KP_NUMBER_6  &kp KP_MINUS     &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &kp RIGHT_BRACKET
-&trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3           &kp KP_NUMBER_0  &kp KP_SLASH            &kp RS(SLASH)   &kp LS(LEFT_BRACKET)  &kp LC(PAGE_UP)  &mkp LCLK       &kp LC(PAGE_DOWN)  &trans
-&trans           &kp EQUAL        &kp KP_ASTERISK  &trans                    &trans           &kp RA(LS(F4))          &trans          &trans                                                                    &trans
+&mt LCTRL SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9           &kp KP_PLUS                                              &kp PAGE_UP           &kp HOME         &kp UP          &kp END            &trans
+&trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &mt LEFT_WIN KP_NUMBER_6  &kp KP_MINUS     &kp LC(LA(DELETE))      &kp UNDERSCORE  &kp PAGE_DOWN         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT          &trans
+&trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3           &kp KP_NUMBER_0  &kp KP_SLASH            &kp RS(SLASH)   &kp LS(LEFT_BRACKET)  &kp LC(PAGE_UP)  &mkp LCLK       &kp LC(PAGE_DOWN)  &kp LEFT_BRACKET
+&trans           &kp EQUAL        &kp KP_ASTERISK  &trans                    &trans           &kp RA(LS(F4))          &trans          &trans                                                                    &kp RIGHT_BRACKET
             >;
         };
 
