@@ -150,10 +150,10 @@
 
         ARROW {
             bindings = <
-&kp LG(L)         &kp LG(NUMBER_1)  &kp LS(LC(N7))        &kp LC(LS(NUMBER_8))  &kp LS(LC(N9))                               &kp LA(RIGHT)  &trans  &trans  &kp AT_SIGN  &kp DOUBLE_QUOTES
-&kp RS(CAPSLOCK)  &kp LG(NUMBER_2)  &kp LS(LC(NUMBER_4))  &kp LS(LC(N5))        &kp LS(LC(N6))        &trans      &trans     &kp LA(LEFT)   &trans  &trans  &kp SQT      &kp COLON
-&pass             &kp LG(NUMBER_3)  &kp LS(LC(NUMBER_1))  &kp LS(LC(N2))        &kp LS(LC(NUMBER_3))  &trans      &trans     &trans         &trans  &trans  &trans       &kp TILDE
-&kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)      &trans                &trans                &trans      &kp LC(W)  &kp LC(TAB)                                 &trans
+&kp Q             &kp W             &kp E             &kp R      &kp T                                 &kp Y              &kp U  &kp I      &kp O      &kp P
+&mt LEFT_SHIFT A  &kp S             &kp D             &kp F      &kp G      &trans          &trans     &kp H              &kp J  &kp K      &kp L      &kp COLON
+&mt RCTRL Z       &kp X             &kp C             &kp V      &kp B      &trans          &trans     &kp N              &kp M  &mkp LCLK  &mkp RCLK  &kp TILDE
+&kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)  &kp ENTER  &kp SPACE  &kp DELETE      &kp LC(W)  &kp LC(BACKSPACE)                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
